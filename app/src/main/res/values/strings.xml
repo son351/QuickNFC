@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NFC VIỆT</string>
+    <string name="title_section1">Đọc</string>
+    <string name="title_section2">Thường</string>
+    <string name="title_section3">Hệ thống</string>
+    <string name="action_settings">Cấu hình</string>
+    <string name="add_new">THÊM/SỬA TÁC VỤ</string>
+    <string name="write_nfc">GHI LÊN THẺ / %1$d Bytes</string>
+    <string name="text_hint">Nội dung</string>
+    <string name="ok">Đồng ý</string>
+    <string name="cancel">Thoát</string>
+    <string name="to">Tới</string>
+    <string name="email_hint">abc@gmail.com</string>
+    <string name="object">Tiêu đề</string>
+    <string name="contact_name">Tên liên hệ</string>
+    <string name="contact_name_hint">abc</string>
+    <string name="contact_company">Công ty</string>
+    <string name="contact_phone">Điện thoại</string>
+    <string name="contact_mail">Mail</string>
+    <string name="contact_site">Website</string>
+    <string name="contact_phone_hint">9999999</string>
+    <string name="contact_site_hint">www.abc.com</string>
+    <string name="from_contact">Từ danh bạ</string>
+    <string name="on_off_state">Chế độ</string>
+    <string name="app_hint">vn.edu.hcmus.ltdd</string>
+    <string name="app_button">Chọn ứng dụng</string>
+    <string name="unsupported_nfc">Thiết bị của bạn không hỗ trợ NFC.</string>
+    <string name="enable_nfc">Vui lòng bật kết nối NFC trên máy bạn!</string>
+    <string name="nfc_reminder">Chạm thẻ NFC của bạn tại đây.</string>
+    <string name="nfc_detected">Xác định thẻ NFC thành công.</string>
+    <string name="nfc_configuration_msg">Cấu hình thẻ NFC của bạn.</string>
+    <string name="task_success">Thực hiện task thành công.</string>
+    <string name="can_write">Cho phép ghi</string>
+    <string name="not_write">Không cho phép ghi</string>
+    <string name="receiver_hint">Số điện thoại người nhận</string>
+    <string name="missing_value">Vui lòng nhập đầy đủ thông tin.</string>
+    <string name="options">Lựa chọn</string>
+    <string name="edit">Sửa</string>
+    <string name="delete">Xóa</string>
+    <string name="asking_for_delete">Bạn có chắc chắn muốn xóa?</string>
+    <string name="delete_success">Xóa thành công</string>
+    <string name="no_task">\t\tHiện chưa có\ntác vụ nào được thêm.</string>
+    <string name="on">Bật</string>
+    <string name="off">Tắt</string>
+    <string name="airplane_sorry">Hiện tại chức năng này chưa thể thực hiện được.</string>
+    <string name="no_gmail">Không có chương trình mail nào</string>
+    <string name="no_sms_activity">Không tìm thấy trình gửi tin nhắn</string>
+    <string name="choose_app">Bạn muốn chọn ứng dụng này?</string>
+    <string name="turn_off">Tắt</string>
+
+    <!-- READ NFC -->
+    <string-array name="title_read">
+        <item>Công nghệ sử dụng</item>
+        <item>Số seri</item>
+        <item>Kích thước</item>
+        <item>Khả năng ghi</item>
+        <item>Loại thẻ</item>
+    </string-array>
+
+    <string-array name="icon_read">
+        <item>@drawable/ic_action_technology</item>
+        <item>@drawable/ic_action_accounts</item>
+        <item>@drawable/ic_action_storage</item>
+        <item>@drawable/ic_action_labels_black</item>
+        <item>@drawable/ic_action_view_as_grid</item>
+    </string-array>
+
+    <!-- WRITE -->
+    <string-array name="title">
+        <item>Văn bản</item>
+        <item>URL</item>
+        <item>Mail</item>
+        <item>Số điện thoại</item>
+        <item>Địa chỉ</item>
+    </string-array>
+
+    <string-array name="detail">
+        <item>Ghi tin nhắn SMS</item>
+        <item>Mở địa chỉ URL</item>
+        <item>Gửi Mail</item>
+        <item>Gọi tới số điện thoại</item>
+        <item>Mở địa chỉ trên bản đồ</item>
+    </string-array>
+
+    <array name="icon">
+        <item>@drawable/ic_action_event</item>
+        <item>@drawable/ic_action_web_site</item>
+        <item>@drawable/ic_action_email</item>
+        <item>@drawable/ic_action_phone</item>
+        <item>@drawable/ic_action_directions</item>
+    </array>
+
+    <!-- TASK -->
+    <string-array name="title_task">
+        <item>Wifi</item>
+        <item>Dữ liệu mạng</item>
+        <item>Bluetooth</item>
+        <item>Màn hình</item>
+        <item>Âm thanh</item>
+        <item>Đèn flash</item>
+        <item>Báo thức</item>
+        <item>Airplane</item>
+        <item>Ứng dụng</item>
+    </string-array>
+
+    <string-array name="detail_task">
+        <item>Bật / Tắt Wifi</item>
+        <item>Bật / Tắt dữ liệu mạng</item>
+        <item>Bật / Tắt Bluetooth</item>
+        <item>Điều chỉnh độ sáng màn hình</item>
+        <item>Cấu hình âm thanh</item>
+        <item>Bật / Tắt đèn flash</item>
+        <item>Đặt giờ báo thức</item>
+        <item>Bật / Tắt Airplane</item>
+        <item>Chạy ứng dụng bất kỳ</item>
+    </string-array>
+
+    <array name="icon_task">
+        <item>@drawable/ic_action_network_wifi</item>
+        <item>@drawable/ic_action_data_usage</item>
+        <item>@drawable/ic_action_bluetooth</item>
+        <item>@drawable/ic_action_brightness_high</item>
+        <item>@drawable/ic_action_volume_on</item>
+        <item>@drawable/ic_action_flash_on</item>
+        <item>@drawable/ic_action_alarms</item>
+        <item>@drawable/ic_action_airplane_mode_on</item>
+        <item>@drawable/ic_action_dock</item>
+    </array>
+
+    <!-- SOUND PROFILE -->
+    <string-array name="sound_profile">
+        <item>Im lặng</item>
+        <item>Rung</item>
+        <item>Bình thường</item>
+    </string-array>
+
+    <!-- URL SPINNER -->
+    <string-array name="url_items">
+        <item>http://</item>
+        <item>https://</item>
+        <item>ftp://</item>
+        <item>file://</item>
+        <item>telnet://</item>
+    </string-array>
+
+</resources>

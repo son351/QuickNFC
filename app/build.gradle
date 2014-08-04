@@ -1,0 +1,74 @@
+buildscript {
+
+    repositories {
+        mavenCentral()
+    }
+
+    def gradleAndroidAnnotationsPluginVersion = '0.3.0'
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.8.+'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.2'
+    }
+}
+apply plugin: 'android'
+apply plugin: 'android-apt'
+def AAVersion = '3.0.1'
+
+repositories {
+    maven { url 'https://repo.commonsware.com.s3.amazonaws.com' }
+    mavenCentral()
+}
+
+configurations {
+    apt
+}
+
+configurations.compile {
+    exclude module: 'spring-core'
+    exclude module: 'spring-web'
+    exclude module: 'commons-logging'
+}
+
+dependencies {
+
+    compile 'com.android.support:support-v13:+'
+    compile 'com.android.support:support-v4:19.0.0'
+
+    // Android Annotations.
+    apt "org.androidannotations:androidannotations:$AAVersion"
+    compile "org.androidannotations:androidannotations-api:$AAVersion"
+
+    // CUSTOM FONT
+    compile 'uk.co.chrisjenx:calligraphy:0.7.+'
+}
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '19.0.3'
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 19
+
+        versionCode 1
+        versionName "1.0"
+
+
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+    }
+}
+
+apt {
+    arguments {
+        androidManifestFile variant.processResources.manifestFile
+    }
+}

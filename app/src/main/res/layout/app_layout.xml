@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="@dimen/extra_large_distance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editPackageName"
+        android:hint="@string/app_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnChooseApp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/main"
+        android:layout_marginTop="@dimen/large_distance"
+        android:layout_gravity="center"
+        android:text="@string/app_button"
+        android:padding="@dimen/small_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

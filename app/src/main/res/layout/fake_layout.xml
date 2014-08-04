@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textSize="@dimen/large_text_size"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/large_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nfc_configuration_msg"
+        android:id="@+id/lblText" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/small_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:background="@color/silver"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/cancel"
+            android:layout_marginRight="@dimen/small_distance"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@color/main"
+            android:text="@string/ok"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

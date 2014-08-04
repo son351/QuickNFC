@@ -1,0 +1,75 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- CUSTOM THEME -->
+    <style name="Theme.Nfctheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_nfctheme</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Nfctheme</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Nfctheme</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Nfctheme</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Nfctheme</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Nfctheme</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_nfctheme</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_nfctheme</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Nfctheme</item>
+        <item name="android:actionBarTabTextStyle">@style/ActionBarTabText</item>
+    </style>
+
+    <style name="ActionBarTabText" parent="@android:style/Widget.Holo.Light.ActionBar.TabText">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="ActionBar.Solid.Nfctheme" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@drawable/ab_background_textured_nfctheme</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_nfctheme</item>
+        <item name="android:backgroundSplit">@drawable/ab_background_textured_nfctheme</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Nfctheme</item>
+        <item name="android:titleTextStyle">@style/ActionBar.TextColor</item>
+    </style>
+
+    <style name="ActionBar.TextColor" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Nfctheme" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_nfctheme</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Nfctheme</item>
+    </style>
+
+    <style name="PopupMenu.Nfctheme" parent="@android:style/Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_nfctheme</item>
+    </style>
+
+    <style name="DropDownListView.Nfctheme" parent="@android:style/Widget.Holo.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_nfctheme</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Nfctheme" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_nfctheme</item>
+    </style>
+
+    <style name="DropDownNav.Nfctheme" parent="@android:style/Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/spinner_background_ab_nfctheme</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_nfctheme</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_nfctheme</item>
+    </style>
+
+    <style name="ProgressBar.Nfctheme" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_nfctheme</item>
+    </style>
+
+    <style name="ActionButton.CloseMode.Nfctheme" parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_nfctheme</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Nfctheme.Widget" parent="@android:style/Theme.Holo">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Nfctheme</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Nfctheme</item>
+    </style>
+
+</resources>
