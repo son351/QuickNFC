@@ -13,12 +13,14 @@
         android:layout_height="wrap_content">
 
         <TextView
+            android:textColor="@android:color/white"
             android:text="@string/to"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <EditText
             android:inputType="textEmailAddress"
+            android:textColorHint="@android:color/white"
             android:id="@+id/editMailTo"
             android:layout_marginLeft="@dimen/small_distance"
             android:hint="@string/email_hint"
@@ -35,12 +37,14 @@
         android:layout_height="wrap_content">
 
         <TextView
+            android:textColor="@android:color/white"
             android:text="@string/object"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <EditText
             android:id="@+id/editSubject"
+            android:textColorHint="@android:color/white"
             android:layout_marginLeft="@dimen/small_distance"
             android:hint="@string/text_hint"
             android:layout_width="match_parent"
@@ -49,6 +53,7 @@
     </LinearLayout>
 
     <TextView
+        android:textColor="@android:color/white"
         android:layout_marginTop="@dimen/small_distance"
         android:layout_marginBottom="@dimen/small_distance"
         android:text="@string/text_hint"
@@ -56,6 +61,7 @@
         android:layout_height="wrap_content" />
 
     <EditText
+        android:textColorHint="@android:color/white"
         android:id="@+id/editContent"
         android:hint="@string/text_hint"
         android:layout_width="match_parent"

@@ -4,15 +4,16 @@
     android:orientation="vertical"
     android:layout_gravity="center"
     android:gravity="center"
-    android:background="@drawable/background"
+    android:background="@drawable/bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ListView
+        android:layout_marginTop="100dp"
         android:padding="@dimen/small_distance"
         android:id="@+id/listView"
         android:divider="@android:color/transparent"
-        android:dividerHeight="0.01dp"
+        android:dividerHeight="@dimen/small_distance"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
@@ -31,7 +32,7 @@
         <TextView
             android:layout_margin="@dimen/small_distance"
             android:textSize="@dimen/large_text_size"
-            android:textColor="@color/gray"
+            android:textColor="@android:color/white"
             android:text="@string/nfc_reminder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />

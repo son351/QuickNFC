@@ -115,10 +115,8 @@ public class WriteFragment extends Fragment {
                 } else if (title.get(position).equals(getResources().getStringArray(R.array.title)[2])) {
                     AppUtils.storeMail(context, new ArrayList<String>());
                 } else if (title.get(position).equals(getResources().getStringArray(R.array.title)[3])) {
-                    AppUtils.storeContact(context, new ArrayList<String>());
-                } else if (title.get(position).equals(getResources().getStringArray(R.array.title)[4])) {
                     AppUtils.storePhone(context, "");
-                } else if (title.get(position).equals(getResources().getStringArray(R.array.title)[5])) {
+                } else if (title.get(position).equals(getResources().getStringArray(R.array.title)[4])) {
                     AppUtils.storeMapAddress(context, "");
                 }
                 title.remove(position);

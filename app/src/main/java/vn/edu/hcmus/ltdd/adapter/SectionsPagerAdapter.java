@@ -10,6 +10,7 @@ import java.util.Locale;
 import vn.edu.hcmus.ltdd.app.R;
 import vn.edu.hcmus.ltdd.fragment.ReadFragment;
 import vn.edu.hcmus.ltdd.fragment.TaskFragment;
+import vn.edu.hcmus.ltdd.fragment.WeatherFragment;
 import vn.edu.hcmus.ltdd.fragment.WriteFragment;
 
 /**
@@ -35,13 +36,16 @@ public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
             case 2:
                 TaskFragment fm2 = TaskFragment.newInstance(context);
                 return fm2;
+            case 3:
+                WeatherFragment fm3 = WeatherFragment.newInstance(context);
+                return fm3;
         }
         return null;
     }
 
     @Override
     public int getCount() {
-        return 3;
+        return 4;
     }
 
     @Override
@@ -54,6 +58,8 @@ public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
                 return context.getString(R.string.title_section2).toUpperCase(l);
             case 2:
                 return context.getString(R.string.title_section3).toUpperCase(l);
+            case 3:
+                return context.getString(R.string.title_section4).toUpperCase(l);
         }
         return null;
     }

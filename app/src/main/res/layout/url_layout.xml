@@ -12,6 +12,7 @@
 
     <EditText
         android:id="@+id/edit_url"
+        android:textColorHint="@android:color/white"
         android:hint="@string/contact_site_hint"
         android:layout_marginLeft="@dimen/small_distance"
         android:layout_width="match_parent"

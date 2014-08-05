@@ -7,6 +7,7 @@
     android:layout_height="match_parent">
 
     <EditText
+        android:textColorHint="@android:color/white"
         android:id="@+id/editPackageName"
         android:hint="@string/app_hint"
         android:layout_width="match_parent"

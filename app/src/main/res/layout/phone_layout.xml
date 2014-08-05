@@ -7,21 +7,22 @@
 
     <EditText
         android:inputType="phone"
+        android:textColorHint="@android:color/white"
         android:id="@+id/editPhone"
         android:hint="@string/contact_phone_hint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <Button
-        android:id="@+id/btnFromContact"
-        android:textStyle="bold"
-        android:layout_margin="@dimen/small_distance"
-        android:layout_gravity="center"
-        android:padding="@dimen/small_distance"
-        android:textColor="@color/white"
-        android:text="@string/from_contact"
-        android:background="@color/main"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <!--<Button-->
+        <!--android:id="@+id/btnFromContact"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_margin="@dimen/small_distance"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:padding="@dimen/small_distance"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:text="@string/from_contact"-->
+        <!--android:background="@color/main"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
 
 </LinearLayout>

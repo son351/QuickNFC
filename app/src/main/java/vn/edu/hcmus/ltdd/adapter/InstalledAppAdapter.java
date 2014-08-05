@@ -10,7 +10,7 @@ import org.androidannotations.annotations.RootContext;
 
 import java.util.List;
 
-import vn.edu.hcmus.ltdd.models.PackageInfoModel;
+import vn.edu.hcmus.ltdd.model.PackageInfoModel;
 import vn.edu.hcmus.ltdd.view.InstalledAppItemView;
 import vn.edu.hcmus.ltdd.view.InstalledAppItemView_;
 

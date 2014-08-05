@@ -5,6 +5,7 @@
     <string name="title_section1">Đọc</string>
     <string name="title_section2">Thường</string>
     <string name="title_section3">Hệ thống</string>
+    <string name="title_section4">Thời tiết</string>
     <string name="action_settings">Cấu hình</string>
     <string name="add_new">THÊM/SỬA TÁC VỤ</string>
     <string name="write_nfc">GHI LÊN THẺ / %1$d Bytes</string>
@@ -49,6 +50,15 @@
     <string name="no_sms_activity">Không tìm thấy trình gửi tin nhắn</string>
     <string name="choose_app">Bạn muốn chọn ứng dụng này?</string>
     <string name="turn_off">Tắt</string>
+    <string name="today">Hôm nay</string>
+    <string name="temp">Nhiệt độ</string>
+    <string name="humidity">Độ ẩm</string>
+    <string name="windspeed">Sức gió</string>
+    <string name="visibility">Tầm nhìn</string>
+    <string name="forecast">Dự báo</string>
+    <string name="network_error">Đã xảy ra lỗi khi kết nối tới máy chủ, vui lòng bật kết nối mạng và thử lại sau.</string>
+    <string name="loading">Đang tải...</string>
+    <string name="thistime">Lúc này</string>
 
     <!-- READ NFC -->
     <string-array name="title_read">
@@ -63,7 +73,7 @@
         <item>@drawable/ic_action_technology</item>
         <item>@drawable/ic_action_accounts</item>
         <item>@drawable/ic_action_storage</item>
-        <item>@drawable/ic_action_labels_black</item>
+        <item>@drawable/ic_action_labels</item>
         <item>@drawable/ic_action_view_as_grid</item>
     </string-array>
 

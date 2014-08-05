@@ -3,7 +3,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:background="@drawable/stroke_border"
-    android:layout_marginTop="@dimen/small_distance"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -35,6 +34,7 @@
             android:maxLines="1"
             android:id="@+id/lbl_title"
             android:text="- - -"
+            android:textColor="@android:color/white"
             android:textStyle="bold"
             android:textSize="@dimen/medium_text_size"
             android:layout_width="wrap_content"
@@ -44,7 +44,7 @@
             android:ellipsize="end"
             android:maxLines="1"
             android:layout_marginTop="@dimen/extra_small_distance"
-            android:textColor="@color/gray"
+            android:textColor="@android:color/white"
             android:id="@+id/lbl_detail"
             android:textSize="@dimen/normal_text_size"
             android:text="- - -"

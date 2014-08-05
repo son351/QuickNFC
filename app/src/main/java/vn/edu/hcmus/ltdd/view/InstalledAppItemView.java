@@ -9,7 +9,7 @@ import org.androidannotations.annotations.EViewGroup;
 import org.androidannotations.annotations.ViewById;
 
 import vn.edu.hcmus.ltdd.app.R;
-import vn.edu.hcmus.ltdd.models.PackageInfoModel;
+import vn.edu.hcmus.ltdd.model.PackageInfoModel;
 
 /**
  * Created by mac on 7/11/14.

@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import vn.edu.hcmus.ltdd.adapter.InstalledAppAdapter;
-import vn.edu.hcmus.ltdd.models.PackageInfoModel;
+import vn.edu.hcmus.ltdd.model.PackageInfoModel;
 
 /**
  * Created by mac on 7/11/14.

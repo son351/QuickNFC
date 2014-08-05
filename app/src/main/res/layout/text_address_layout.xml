@@ -8,12 +8,14 @@
     <EditText
         android:inputType="phone"
         android:id="@+id/edit_text_receiver"
+        android:textColorHint="@android:color/white"
         android:hint="@string/receiver_hint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <EditText
         android:id="@+id/edit_text_address"
+        android:textColorHint="@android:color/white"
         android:hint="@string/text_hint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

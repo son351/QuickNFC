@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -86,13 +85,6 @@ public class WriteDetailActivity extends Activity {
             LayoutInflater inflater = LayoutInflater.from(this);
             View v = inflater.inflate(R.layout.phone_layout, null);
             editPhone = (EditText) v.findViewById(R.id.editPhone);
-            Button btnFromContact = (Button) v.findViewById(R.id.btnFromContact);
-            btnFromContact.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-
-                }
-            });
             write_frame.addView(v);
         } else if (type == 4) {
             LayoutInflater inflater = LayoutInflater.from(this);

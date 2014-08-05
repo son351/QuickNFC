@@ -2,18 +2,19 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:background="@drawable/background"
+    android:background="@drawable/bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:background="@color/silver"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/transparent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <LinearLayout
             android:id="@+id/add_new"
-            android:background="@drawable/stroke"
+            android:background="@drawable/stroke_border"
             android:layout_margin="@dimen/small_distance"
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -22,7 +23,7 @@
             <LinearLayout
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:background="#b3d043"
+                android:background="#59b3d043"
                 android:layout_weight="2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent">
@@ -51,7 +52,7 @@
                     android:gravity="center"
                     android:layout_gravity="center"
                     android:text="@string/add_new"
-                    android:textColor="@color/gray"
+                    android:textColor="@android:color/white"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
@@ -67,7 +68,7 @@
     </LinearLayout>
 
     <ListView
-        android:dividerHeight="0dp"
+        android:dividerHeight="@dimen/small_distance"
         android:divider="@android:color/transparent"
         android:layout_marginLeft="@dimen/small_distance"
         android:layout_marginRight="@dimen/small_distance"
@@ -85,7 +86,7 @@
         <TextView
             android:layout_margin="@dimen/small_distance"
             android:textSize="@dimen/large_text_size"
-            android:textColor="@color/gray"
+            android:textColor="@android:color/white"
             android:text="@string/no_task"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
