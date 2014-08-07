@@ -64,7 +64,7 @@ public class TaskDetailActivity extends Activity {
         icon.setImageDrawable(getResources().obtainTypedArray(R.array.icon_task).getDrawable(type));
 
         // INFLATE LAYOUT
-        if (type == 0 || type == 1 || type == 2 || type == 5 || type == 7) {
+        if (type == 0 || type == 1 || type == 2) {
             LayoutInflater inflater = LayoutInflater.from(this);
             View v = inflater.inflate(R.layout.on_off_layout, null);
             switchOnOff = (Switch) v.findViewById(R.id.switchOnOff);
@@ -89,13 +89,13 @@ public class TaskDetailActivity extends Activity {
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
             spinnerSoundProfile.setAdapter(adapter);
             write_frame.addView(v);
-        } else if (type == 6) {
+        } else if (type == 5) {
             LayoutInflater inflater = LayoutInflater.from(this);
             View v = inflater.inflate(R.layout.alarm_layout, null);
             datePicker = (DatePicker) v.findViewById(R.id.datePicker);
             timePicker = (TimePicker) v.findViewById(R.id.timePicker);
             write_frame.addView(v);
-        } else if (type == 8) {
+        } else if (type == 6) {
             LayoutInflater inflater = LayoutInflater.from(this);
             View v = inflater.inflate(R.layout.app_layout, null);
             editPackageName = (EditText) v.findViewById(R.id.editPackageName);
@@ -119,7 +119,7 @@ public class TaskDetailActivity extends Activity {
 
     @Click(R.id.btn_ok)
     protected void btn_okWasClicked() {
-        if (type == 0 || type == 1 || type == 2 || type == 5 || type == 7) {
+        if (type == 0 || type == 1 || type == 2) {
             String title = getResources().getStringArray(R.array.title_task)[type];
             String checkedSwitch;
             if (checked) {
@@ -132,12 +132,12 @@ public class TaskDetailActivity extends Activity {
             AppUtils.storeBrightnessValue(this, seekBarBrightness.getProgress());
         } else if (type == 4) {
             AppUtils.storeSound(this, spinnerSoundProfile.getSelectedItem().toString());
-        } else if (type == 6) {
+        } else if (type == 5) {
             Calendar cal = Calendar.getInstance();
             cal.set(datePicker.getYear(),datePicker.getMonth(),
                     datePicker.getDayOfMonth(),timePicker.getCurrentHour(),timePicker.getCurrentMinute(),0);
             AppUtils.storeAlarm(this, cal.getTimeInMillis());
-        } else if (type == 8) {
+        } else if (type == 6) {
             if (editPackageName.getText().toString().equals("")) {
                 warningMessage();
             } else {

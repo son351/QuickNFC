@@ -16,11 +16,9 @@ import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ItemClick;
 import org.androidannotations.annotations.ViewById;
 
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 import vn.edu.hcmus.ltdd.adapter.ListViewAdapter;
@@ -69,7 +67,7 @@ public class TaskFragment extends Fragment {
         detail = new ArrayList<String>();
         title = getResources().getStringArray(R.array.title_task);
         for (int i = 0; i < title.length; i++) {
-            if (i == 0 || i == 1 || i == 2 || i == 5 || i == 7) {
+            if (i == 0 || i == 1 || i == 2) {
                 if (!AppUtils.getOnOff(context, title[i]).equals("")) {
                     header.add(title[i]);
                     detail.add(title[i] + " - " + AppUtils.getOnOff(context, title[i]));
@@ -85,14 +83,14 @@ public class TaskFragment extends Fragment {
             detail.add(AppUtils.getSound(context));
         }
         if (AppUtils.getAlarm(context) != 0) {
-            header.add(title[6]);
+            header.add(title[5]);
             SimpleDateFormat format = AppUtils.getShowDateFormatter();
             Calendar cal = Calendar.getInstance();
             cal.setTimeInMillis(AppUtils.getAlarm(context));
             detail.add(format.format(cal.getTime()));
         }
         if (!AppUtils.getApp(context).equals("")) {
-            header.add(title[8]);
+            header.add(title[6]);
             detail.add(AppUtils.getApp(context));
         }
 
@@ -113,16 +111,15 @@ public class TaskFragment extends Fragment {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 if ((header.get(position).equals(title[0])) || (header.get(position).equals(title[1]))
-                        || (header.get(position).equals(title[2])) || (header.get(position).equals(title[5]))
-                        || (header.get(position).equals(title[7]))) {
+                        || (header.get(position).equals(title[2]))) {
                     AppUtils.storeOnOff(context, header.get(position), "");
                 } else if (header.get(position).equals(title[3])) {
                     AppUtils.storeBrightnessValue(context, -1);
                 } else if (header.get(position).equals(title[4])) {
                     AppUtils.storeSound(context, "");
-                } else if (header.get(position).equals(title[6])) {
+                } else if (header.get(position).equals(title[5])) {
                     AppUtils.storeAlarm(context, 0);
-                } else if (header.get(position).equals(title[8])) {
+                } else if (header.get(position).equals(title[6])) {
                     AppUtils.storeApp(context, "");
                 }
 

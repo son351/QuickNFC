@@ -109,9 +109,7 @@
         <item>Bluetooth</item>
         <item>Màn hình</item>
         <item>Âm thanh</item>
-        <item>Đèn flash</item>
         <item>Báo thức</item>
-        <item>Airplane</item>
         <item>Ứng dụng</item>
     </string-array>
 
@@ -121,9 +119,7 @@
         <item>Bật / Tắt Bluetooth</item>
         <item>Điều chỉnh độ sáng màn hình</item>
         <item>Cấu hình âm thanh</item>
-        <item>Bật / Tắt đèn flash</item>
         <item>Đặt giờ báo thức</item>
-        <item>Bật / Tắt Airplane</item>
         <item>Chạy ứng dụng bất kỳ</item>
     </string-array>
 
@@ -133,9 +129,7 @@
         <item>@drawable/ic_action_bluetooth</item>
         <item>@drawable/ic_action_brightness_high</item>
         <item>@drawable/ic_action_volume_on</item>
-        <item>@drawable/ic_action_flash_on</item>
         <item>@drawable/ic_action_alarms</item>
-        <item>@drawable/ic_action_airplane_mode_on</item>
         <item>@drawable/ic_action_dock</item>
     </array>
 
